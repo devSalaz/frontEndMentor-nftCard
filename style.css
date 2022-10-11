@@ -1,0 +1,168 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #0d192c;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.card-body {
+  width: 350px;
+  min-height: 596px;
+  background: #15263f;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+  height: fit-content;
+  padding: 24px;
+}
+
+.container-img {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.container-img:hover .container-hover-effect {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.cube {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container-hover-effect {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0.5);
+  mix-blend-mode: normal;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.text-container {
+  margin-bottom: 24px;
+}
+
+.text-equilibrium {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  transition: color 400ms ease;
+}
+
+.text-equilibrium:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
+.text-paragraph {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #8bacd9;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.text-bottom-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-money {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #00fff8;
+}
+
+.text-money span img,
+.text-days span img {
+  height: auto;
+  display: inline-block;
+  margin-right: 6px;
+  transform: translateY(15%);
+}
+
+.text-money span img {
+  width: 11px;
+}
+
+.text-days span img {
+  width: 16px;
+}
+
+.text-days {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8bacd9;
+}
+
+.avatar {
+  width: 33px;
+  height: auto;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #ffffff;
+  padding: 16px 0;
+}
+
+.avatar-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8bacd9;
+}
+
+.avatar-description span {
+  color: #fff;
+  transition: color 400ms ease;
+}
+
+.avatar-description span:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .card-body {
+    width: 327px;
+    min-height: 543px;
+  }
+}
